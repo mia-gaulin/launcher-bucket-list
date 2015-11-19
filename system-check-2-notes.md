@@ -5,7 +5,7 @@
 * Persist information from a user submitted via a `POST` request.
 * Implement code based on acceptance tests.
 
-#### Building a Bucket List App
+### Building a Bucket List App
 
 Building a list keeping app with Sinatra with dynamic web pages and saves information to a file.
 
