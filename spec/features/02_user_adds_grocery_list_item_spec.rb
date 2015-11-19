@@ -1,17 +1,17 @@
 require "spec_helper"
 
 feature "user adds bucket list item" do
-  scenario "item added when filled form submitted" do
+  scenario "when valid form submitted" do
     visit "/launcher-bucket-list"
 
-    fill_in "Add New Goal to Bucket List", with: "Give a Lightning Talk"
+    fill_in "Add New Goal to Bucket List", with: "Gotta catch 'em all"
     click_on "Add"
 
-    expect(page).to have_content("Give a Lightning Talk")
+    expect(page).to have_content("Gotta catch 'em all")
   end
 
-  scenario "empty li element is not added when empty is submitted" do
-    visit "/groceries"
+  scenario "when not valid submission empty li element is not added to the page" do
+    visit "/launcher-bucket-list"
     click_on "Add"
 
     expect(page).not_to have_selector("li")

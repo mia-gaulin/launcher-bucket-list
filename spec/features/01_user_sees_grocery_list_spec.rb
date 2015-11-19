@@ -7,7 +7,7 @@ feature "user sees bucket list items" do
       file.puts([goal])
     end
 
-    visit "/groceries"
+    visit "/launcher-bucket-list"
     expect(page).to have_content("Learn Ruby")
   end
 
