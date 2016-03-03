@@ -3,12 +3,12 @@ require "spec_helper"
 feature "user sees bucket list items" do
   scenario "user views all bucket list items" do
     CSV.open("bucket_list.csv", "a", headers: true) do |file|
-      goal = "Learn Ruby"
+      goal = "Learn Sinatra"
       file.puts([goal])
     end
 
     visit "/launcher-bucket-list"
-    expect(page).to have_content("Learn Ruby")
+    expect(page).to have_content("Learn Sinatra")
   end
 
   scenario "user sees all bucket items at root path" do
