@@ -23,7 +23,7 @@ Our app should satisfy the following requirements:
 ## To use this as a practice:
 
 * Run this in your terminal: `git clone https://github.com/EliseFitz15/launcher-bucket-list`
-* Then go into the directory `cd launcher-favorites-list`
+* Then go into the directory `cd launcher-bucket-list`
 * `bundle` then `rspec`
 * Work through the test errors
 
