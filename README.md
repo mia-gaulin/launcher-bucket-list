@@ -18,3 +18,21 @@ Our app should satisfy the following requirements:
 * The list of goals is read from the `bucket_list.csv` file which stores each item on a new line.
 * The form submits to `POST /launcher-bucket-list` which saves the new item to the `bucket_list.csv` file.
 * Submitting an empty form does not modify the `bucket_list.csv` file.
+* Passing test suite.
+
+## To use this as a practice:
+
+* Run this in your terminal: `git clone https://github.com/EliseFitz15/launcher-bucket-list`
+* Then go into the directory `cd launcher-favorites-list`
+* `bundle` then `rspec`
+* Work through the test errors
+
+##### When finished it you would like to push this to your github do the following:
+
+* In the terminal: `git remote rm origin`
+* Go to Github and set up your own repo
+* Terminal: `git remote add origin <your-remote-repo-url>`
+* Then add and push your own work.
+  - `git add .`
+  - `git commit -m "initial commit"`
+  - `git push origin master`
