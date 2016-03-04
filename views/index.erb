@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Launcher Bucket List</title>
+  </head>
+  <body>
+    <ul>
+      <% @bucket_list.each do |row| %>
+        <li>
+          <%= row["goal"] %>
+        </li>
+      <% end %>
+    </ul>
+    <form action="/launcher-bucket-list" method="post">
+      <label for="goal">Add New Goal to Bucket List</label>
+      <input type="text" name="goal" id="goal">
+
+      <input type="submit" value="Add">
+    </form>
+  </body>
+</html>
